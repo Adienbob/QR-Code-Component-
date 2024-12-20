@@ -1,0 +1,138 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --Font-size: 15px;
+    --Font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--slate-300);
+}
+
+section {
+    width: 220px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+p:first-of-type {
+    font-family: var(--Font-family);
+    color: var(--slate-900);
+    font-size: 13px;
+    font-weight: 900;
+    margin: 0px 5px 20px ;
+}
+
+p:last-of-type {
+    font-family: var(--Font-family);
+    color: var(--slate-500);
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0px 5px 20px ;
+}
+
+
+@media (min-width: 375px) and (max-width: 440px) {
+    section {
+        width: 330px;
+        height: 500px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    p:first-of-type
+    {
+        font-size: 20px;
+        margin: 0px 10px 20px;
+    }    
+
+    P:last-of-type
+    {
+        font-size: 17px;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 767px) {
+    section {
+        width: 330px;
+        height: 500px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    p:first-of-type
+    {
+        font-size: 20px;
+        margin: 0px 10px 20px;
+    }    
+
+    P:last-of-type
+    {
+        font-size: 17px;
+        margin: 0px 10px;
+    }
+    
+}
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    section {
+        width: 430px;
+        height: 600px;
+    }
+
+    img {
+        width: 400px;
+        height: 300px;
+    }
+
+    p:first-of-type
+    {
+        font-size: 25px;
+        margin: 0px 10px 45px;
+    }    
+
+    P:last-of-type
+    {
+        font-size: 24px;
+        margin: 0px 10px;
+    }
+    
+}
